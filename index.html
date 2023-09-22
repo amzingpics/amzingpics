@@ -25,10 +25,11 @@ post = fetch("https://jsonplaceholder.typicode.com/todos", {
   method: "GET",
   body: JSON.stringify({
     texto: "leia essa porra"
-  }),
-  headers: {
-    "Content-type": "application/json; charset=UTF-8"
-  }
+  })
+ //,
+//  headers: {
+//    "Content-type": "application/json; charset=UTF-8"
+//  }
 });
 post.then(data => {console.log(data);});
 
