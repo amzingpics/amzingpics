@@ -10,7 +10,7 @@
     </style>
   
 
-     <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+   
       <script>
 
 //fetch('https://asdffsdfsd.000webhostapp.com/save.php', {
@@ -24,12 +24,10 @@
 post = fetch("https://asdffsdfsd.000webhostapp.com/save.php", {
   mode: "no-cors",
   method: "POST",
-  body: JSON.stringify({
-    texto: "leia essa porra"
-  })
+  body:  {texto: "leia essa porra"} 
  //,
 //  headers: {
-//    "Content-type": "application/json; charset=UTF-8"
+//    "Content-type": "text/html; charset=UTF-8"
 //  }
 });
 post.then(data => {console.log(data);});
