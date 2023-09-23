@@ -28,7 +28,7 @@
             //"application/x-www-form-urlencoded; charset=UTF-8"}
           });
           post.then(data => {
-            console.log(data);
+            //console.log(data);
           });
         } catch (error) {
           // Lidar com erros, se necessário
