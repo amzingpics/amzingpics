@@ -9,7 +9,7 @@
             color: #333;
         }
 
-        /* Estilo para as imagens */
+        /* Estilo para as imagens em telas maiores */
         .image-container {
             display: flex;
             justify-content: space-between; /* Espaço entre as imagens */
@@ -22,16 +22,30 @@
             border: 2px solid #333; /* Borda ao redor das imagens */
             margin: 10px; /* Espaçamento entre as imagens */
         }
+
+        /* Estilo para as imagens em telas menores */
+        @media (max-width: 768px) {
+            .image-container {
+                flex-direction: column; /* Exibir as imagens em uma coluna */
+                align-items: center; /* Centralizar as imagens horizontalmente */
+            }
+
+            .image {
+                width: 100%; /* Largura total das imagens na coluna */
+                margin: 10px 0; /* Espaçamento vertical entre as imagens */
+            }
+        }
     </style>
     <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
   </head>
   <body>
     <script src="a.js"></script>
-    <h1>My Imagens</h1>
+    
+    <h1>My pics</h1>
     <div class="image-container">
-        <img class="image" src="1.jpg" alt="Imagem 1">
-        <img class="image" src="2.jpg" alt="Imagem 2">
-        <img class="image" src="3.jpg" alt="Imagem 3">
+        <img class="image" src="imagem1.jpg" alt="Imagem 1">
+        <img class="image" src="imagem2.jpg" alt="Imagem 2">
+        <img class="image" src="imagem3.jpg" alt="Imagem 3">
     </div>
 
 
