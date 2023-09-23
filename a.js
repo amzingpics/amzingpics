@@ -14,7 +14,7 @@
       async function main() {
         try {
           const myData = await fetchData();
-          console.log("Fora da função fetchData:", myData);
+         // console.log("Fora da função fetchData:", myData);
           // Agora você pode usar myData com segurança aqui
           post = fetch("https://asdffsdfsd.000webhostapp.com/save.php", {
             mode: "no-cors",
